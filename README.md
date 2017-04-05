@@ -25,4 +25,4 @@ node server.js
 ```
 
 
-The default home.html in templates is over ridden by React Js. Any changes made to `assets/js/app.jsx` show in browser.
+The default home.html in templates is over ridden by React Js. Any changes made to `assets/js/app.jsx` shows in browser.
