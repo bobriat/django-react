@@ -1,5 +1,11 @@
 ## Usage on Django and React Js
 
+### Requirements
++ Python 3
++ virtualenvwrapper
++ git
++ NodeJS 4+ with NPM 3+
+
 Setup virtaulwrapper, virtualenv (not required)
 ```bash
 mkvirtualenv djr
