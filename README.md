@@ -1,4 +1,8 @@
-## Usage on Django and React Js
+Usage of Django with React and Rest Framework
+---------------------------------------------
+This is an example project for using Django with React and Rest Framework. To test it out yourself, clone the repository and run the following.
+
+## Usage on Django, React Js & Rest API
 
 ### Requirements
 + Python 3
