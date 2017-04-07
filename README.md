@@ -25,7 +25,7 @@ Run django server
 
 In other terminal , compile file and run webpack dev server
 ```bash
-./node_modules/.bin/webpack --config webpack.config.js
+./node_modules/.bin/webpack --config webpack.config.js --progress --colors
 
 node server.js
 ```
