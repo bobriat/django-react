@@ -26,12 +26,12 @@ var PagesList = React.createClass({
         if (this.state.data) {
             console.log('DATA!')
             var pageNodes = this.state.data.map(function(page){
-                return <li> {page.title} </li>
+                return <li> Page: {page.title} </li>
             })
         }
         return (
             <div>
-                <h1>Hello React!</h1>
+                <h1>Hello Django, React and Rest API!</h1>
                 <ul>
                     {pageNodes}
                 </ul>

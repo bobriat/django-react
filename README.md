@@ -18,9 +18,20 @@ pip install -r requirements.txt
 npm install
 ```
 
+Django migrate, create admin user
+```bash
+./manage.py migrate
+ ./manage.py createsuperuser
+```
+
 Run django server
 ```bash
 ./manage.py runserver
+```
+
+Login to Django Admin, create CMS pages
+```bash
+http://localhost:8040/admin/
 ```
 
 In other terminal , compile file and run webpack dev server
