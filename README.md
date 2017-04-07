@@ -21,7 +21,7 @@ npm install
 Django migrate, create admin user
 ```bash
 ./manage.py migrate
- ./manage.py createsuperuser
+./manage.py createsuperuser
 ```
 
 Run django server
@@ -42,4 +42,4 @@ node server.js
 ```
 
 
-The default home.html in templates is over ridden by React Js. Any changes made to `assets/js/app.jsx` shows in browser.
+The default `home.html` in templates is over ridden by React, Rest API. Any changes made to `assets/js/index.jsx` shows in browser.
