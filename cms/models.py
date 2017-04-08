@@ -9,10 +9,14 @@ class Page(models.Model):
 	is_public = models.BooleanField(default=False)
 	objects = PageManager()
 
+	def as_json(self):
+		return dict(title=self.title, is_public=self.is_public)
+
 	def __str__(self):
-		return self.title
+		return "{}".format(self.title)
 
 class Component(models.Model):
+	title = models.CharField(max_length=200)
 	page = models.ForeignKey(Page, models.CASCADE, related_name='pages')
 	GRID_CHOICES = (
 	    ("ROW", "Row"),
@@ -26,6 +30,8 @@ class Component(models.Model):
                   choices=GRID_CHOICES,
                   default="ROW")
 	content = models.CharField(max_length=250)
+	active_image =  models.URLField(max_length=200, blank=True)
+	initial_image =  models.URLField(max_length=200, blank=True)
 	rank = models.IntegerField()
 
 	def __str__(self):

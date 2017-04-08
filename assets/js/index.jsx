@@ -19,20 +19,23 @@ var PagesList = React.createClass({
 
     componentDidMount: function() {
         this.loadBooksFromServer();
-        setInterval(this.loadBooksFromServer,
+        setInterval(this.loadPagesFromServer,
                     this.props.pollInterval)
     },
     render: function() {
         if (this.state.data) {
             console.log('DATA!')
             var pageNodes = this.state.data.map(function(page){
-                return <li> Page: {page.title} </li>
+                return <li class="list-group-item"> Page: {page.title} </li>
+
             })
         }
         return (
             <div>
-                <h1>Hello Django, React and Rest API!</h1>
-                <ul>
+              <div class="page-header">
+                <h1>Hello <small> Usage of Django, React and Rest API!</small></h1>
+                </div>
+                <ul class="list-group">
                     {pageNodes}
                 </ul>
             </div>
